@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <CheckedTextView
+            android:id="@+id/AT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/AT"
+            android:textSize="20dp" />
+        <CheckedTextView
+             android:id="@+id/onAccuracyChanged"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/AT"
+             android:text="@string/onAccuracyChanged"
+             android:textSize="18dp" />
+
+         <LinearLayout
+             android:id="@+id/Button"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/onAccuracyChanged">
+
+
+             <Space
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1" />
+
+             <Button
+                 android:id="@+id/Button_Write"
+                 android:layout_width="90dp"
+                 android:layout_height="wrap_content"
+                 android:text="@string/Button_Write"
+                 android:textSize="20dp" />
+
+             <Space
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1" />
+
+             <Button
+                 android:id="@+id/Button_Stop"
+                 android:layout_width="90dp"
+                 android:layout_height="wrap_content"
+                 android:text="@string/Button_Stop"
+                 android:textSize="20dp" />
+
+             <Space
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1" />
+         </LinearLayout>
+         <com.xmobileapp.android.step.StepView
+             android:id="@+id/cc"
+             android:layout_width="200dp"
+             android:layout_height="200dp"
+             android:layout_below="@+id/Button"
+             android:layout_centerHorizontal="true"
+             android:layout_marginTop="50dp" />
+
+        <com.xmobileapp.android.step.DrawPic
+            android:id="@+id/X"
+            android:layout_width="420dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/cc"
+            android:layout_marginTop="10dp" />
+
+        <com.xmobileapp.android.step.DrawPic
+            android:id="@+id/Y"
+            android:layout_width="420dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/X"
+            android:layout_marginTop="22dp" />
+
+        <com.xmobileapp.android.step.DrawPic
+            android:id="@+id/Z"
+            android:layout_width="420dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/Y"
+            android:layout_marginTop="35dp" />
+    </RelativeLayout>
+</RelativeLayout>
